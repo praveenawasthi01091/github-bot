@@ -1,0 +1,30 @@
+<h2 style="background-color: whitesmoke; text-align:center; color: black; font-style: italic;">All Favourite Repository </h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- <button (click)=showAllRepo()>Show all Repo</button> -->
+<!-- <div *ngFor = "let a of repos">{{a.name}}  {{"Created At: "+a.created_at}} </div> -->
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Repo Name</th>
+        <th scope="col">Created at</th>
+        <th scope="col">Remove</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor = "let a of repo">
+       
+      <tr id="{{a.id}}">
+        <th scope="row">{{a.id}}</th>
+        <td>{{a.repoName}}</td>
+        <td>{{a.createdAt}}</td>
+        <td><button (click)=del(a.id) class="btn btn-danger">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true">
+                </span>
+            </button></td>
+      </tr>
+    
+
+    </tbody>
+  </table>

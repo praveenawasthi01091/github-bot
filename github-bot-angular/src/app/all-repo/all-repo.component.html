@@ -1,0 +1,34 @@
+<h2 style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: italic;background-color: whitesmoke;">All Public Repositories  </h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- <button (click)=showAllRepo()>Show all Repo</button> -->
+<!-- <div *ngFor = "let a of repos">{{a.name}}  {{"Created At: "+a.created_at}} </div> -->
+<div style="text-align: center;">
+   <button (click)=changeColor() type="submit" class="btn btn-warning btn-lg">fav/non fav</button>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Repo Name</th>
+        <th scope="col">Created  at</th>
+        <th scope="col">fav/star</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor = "let a of repo">       
+      <tr>
+        <th scope="row">{{a.id}}</th>
+        <td>{{a.repoName}}</td>
+        <td>{{a.createdAt}}</td>
+        <!-- star column -->
+        <td><button id="{{a.id}}" (click)=star(a.id,a.repoName,a.createdAt) class="btn btn-warning">
+                <span  id="{{a.repoName}}" class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
+            </button> 
+        </td>
+       
+      </tr>
+    </tbody>
+  </table>
+ 
