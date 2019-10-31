@@ -1,10 +1,14 @@
 # GithubBot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14 and Spring Boot.
-DataBase: MongoDB
-ChatBot: dialogFlow : https://dialogflow.cloud.google.com/#/agent/835b5f26-fcab-4c54-82c5-aeae894b8e49/intents
-Github auth token: https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
-Github API: 
+### DataBase: 
+MongoDB
+### ChatBot: dialogFlow
+https://dialogflow.cloud.google.com/#/agent/835b5f26-fcab-4c54-82c5-aeae894b8e49/intents
+### Github auth token: 
+https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+### Github API: 
+https://developer.github.com/v3/
 
 ## Development server
 
